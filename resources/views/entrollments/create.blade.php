@@ -14,8 +14,8 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label>Course</label>
-                <select name="course_id" class="form-control">
+                <label for="course_id">Course</label>
+                <select id="course_id" name="course_id" class="form-control">
                     @foreach($courses as $course)
                         <option value="{{ $course->id }}">{{ $course->title }}</option>
                     @endforeach

@@ -13,3 +13,4 @@ Route::resource('categories', CategoryController::class);
 Route::resource('enrollments', EnrollmentController::class);
 Route::resource('quizzes', QuizController::class);
 
+Route::get('/users', [UserController::class, 'index']);
