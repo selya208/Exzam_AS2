@@ -10,8 +10,8 @@
                 <input type="text" name="title" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label>Lesson</label>
-                <select name="lesson_id" class="form-control">
+                <label for="lesson_id">Lesson</label>
+                <select id="lesson_id" name="lesson_id" class="form-control">
                     @foreach($lessons as $lesson)
                         <option value="{{ $lesson->id }}">{{ $lesson->title }}</option>
                     @endforeach
